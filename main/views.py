@@ -21,7 +21,7 @@ def show_main(request):
         'class': 'PBP D',
         'npm': '2306123456',
         'mood_entries': mood_entries,
-        'last_login': request.COOKIES['last_login']
+        'last_login': request.COOKIES['last_login'],
     }
 
     return render(request, "main.html", context)
